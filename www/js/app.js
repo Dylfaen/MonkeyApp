@@ -9,7 +9,7 @@ app.config(['$routeProvider',
             templateUrl: 'views/category.html',
             controller: 'categoryCtrl'
         })
-         .when('/discount/:discountID', {
+        .when('/discount/:discountID', {
             templateUrl: 'views/discount.html',
             controller: 'discountCtrl'
         })
@@ -20,79 +20,79 @@ app.config(['$routeProvider',
 
 app.controller('appController', function($scope, $rootScope) {
     $rootScope.categories = [
-        {
-            'id': 0,
-            'name': 'Fitness'
-        },
-        {
-            'id': 1,
-            'name': 'Bien-être'
-        },
-        {
-            'id': 2,
-            'name': 'Alimentation'
-        },
-        {
-            'id': 3,
-            'name': 'Spectacles'
-        }
+    {
+        'id': 0,
+        'name': 'Fitness'
+    },
+    {
+        'id': 1,
+        'name': 'Bien-être'
+    },
+    {
+        'id': 2,
+        'name': 'Alimentation'
+    },
+    {
+        'id': 3,
+        'name': 'Spectacles'
+    }
     ];
     $rootScope.promotions = [
-        {
-            'id': 0,
-            'discount': '75%',
-            'description': "Réduction valable sur présentation de l'application.",
-            'storeAddress': "13 rue du Vincin, 56550 Vannes",
-            'brandImage': "img/devred.jpeg",
-            'image': "img/devredbanner.jpg",
-            'categoryID': 0 
-        },
-        {
-            'id': 1,
-            'store': 'Nocibé',
-            'price': '1.50',
-            'discount': '75%',
-            'description': 'Licorne',
-            'storeAddress': "13 rue du Vincin, 56550 Vannes",
-            'brandImage': "img/devred.jpeg",
-            'image': "img/devredbanner.jpg",
-            'categoryID': 0
-        },
-        {
-            'id': 2,
-            'store': 'Celio',
-            'price': '1.50',
-            'discount': '75%',
-            'description': 'Licorne',
-            'storeAddress': "13 rue du Vincin, 56550 Vannes",
-            'brandImage': "img/devred.jpeg",
-            'image': "img/devredbanner.jpg",
-            'categoryID': 1
-        },
-        {
-            'id': 3,
-            'store': 'La mie caline',
-            'price': '1.50',
-            'discount': '75%',
-            'description': 'Licorne',
-            'storeAddress': "13 rue du Vincin, 56550 Vannes",
-            'brandImage': "img/devred.jpeg",
-            'image': "img/devredbanner.jpg",
-            'categoryID': 2
+    {
+        'id': 0,
+        'discount': '75%',
+        'description': "Réduction valable sur présentation de l'application.",
+        'storeAddress': "13 rue du Vincin, 56550 Vannes",
+        'brandImage': "img/devred.jpeg",
+        'image': "img/devredbanner.jpg",
+        'categoryID': 0 
+    },
+    {
+        'id': 1,
+        'store': 'Nocibé',
+        'price': '1.50',
+        'discount': '75%',
+        'description': 'Licorne',
+        'storeAddress': "13 rue du Vincin, 56550 Vannes",
+        'brandImage': "img/devred.jpeg",
+        'image': "img/devredbanner.jpg",
+        'categoryID': 0
+    },
+    {
+        'id': 2,
+        'store': 'Celio',
+        'price': '1.50',
+        'discount': '75%',
+        'description': 'Licorne',
+        'storeAddress': "13 rue du Vincin, 56550 Vannes",
+        'brandImage': "img/devred.jpeg",
+        'image': "img/devredbanner.jpg",
+        'categoryID': 1
+    },
+    {
+        'id': 3,
+        'store': 'La mie caline',
+        'price': '1.50',
+        'discount': '75%',
+        'description': 'Licorne',
+        'storeAddress': "13 rue du Vincin, 56550 Vannes",
+        'brandImage': "img/devred.jpeg",
+        'image': "img/devredbanner.jpg",
+        'categoryID': 2
 
-        },
-        {
-            'id': 4,
-            'store': 'MonkeyStore',
-            'price': '1.50',
-            'discount': '75%',
-            'description': 'Licorne',
-            'storeAddress': "13 rue du Vincin, 56550 Vannes",
-            'brandImage': "img/devred.jpeg",
-            'image': "img/devredbanner.jpg",
-            'categoryID': 2
+    },
+    {
+        'id': 4,
+        'store': 'MonkeyStore',
+        'price': '1.50',
+        'discount': '75%',
+        'description': 'Licorne',
+        'storeAddress': "13 rue du Vincin, 56550 Vannes",
+        'brandImage': "img/devred.jpeg",
+        'image': "img/devredbanner.jpg",
+        'categoryID': 2
 
-        }
+    }
     ];
     $scope.profileMenuState = "closed";
     $scope.categoryMenuState = "closed";

@@ -63,13 +63,14 @@
 
             <div ng-view class="page-container">
             </div>
-            <!--<div ng-class="{'visible': isAMenuOpen}" id="opacity85">
-            </div>-->
             <div class="header row">
                 <div class="col-2">
-                  <button class="menu-button" ng-click="changeProfileMenuState()" id="profile-menu-button">
+                  <button class="menu-button" ng-click="changeProfileMenuState(); activateAnimation()" id="profile-menu-button">
                     <i class="material-icons">&#xE853;</i>
-                </button>
+                    <div class="truc" ng-class="active">
+                    </div>
+                 </button>
+
             </div>
             <div class="col-8">
                 <a href="#home">
@@ -81,6 +82,5 @@
                     <i class="material-icons">menu</i>
                 </button>
             </div>
-        </div>
     </body>
-    </html>
+</html>
